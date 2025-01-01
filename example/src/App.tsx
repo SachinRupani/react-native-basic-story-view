@@ -1,20 +1,5 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-basic-story-view';
-
-const result = multiply(3, 7);
+import { ExampleScreen } from './exampleScreen/ExampleScreen';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
-  );
+  return <ExampleScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
