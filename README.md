@@ -31,6 +31,12 @@ import BasicStoryView from 'react-native-basic-story-view';
   }
   additionalContainerStyle={stylesToUse.additionalStoryContainerStyle}
   dataItems={storySlidesData}
+  indicatorProps={{
+    barRadius: 12,
+    heightBar: 4,
+    defaultHexCodeBarColor: '#d1d1d1', // <- default bar color hex code
+    activeHexCodeBarColor: '#f432ab', // <- active/completed bar color hex code
+  }}
   onCompletion={_handleStorySlidesCompletionAction}
 />;
 ```
